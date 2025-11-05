@@ -1,28 +1,304 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Index Page</title>
-    </head>
-    <body>
-        <h1>Welcome to my Portfolio</h1>
-        <h2>I am Ayush</h2>
-        <h2>I am a Full Stack Developer</h2>
-        <hr/>
-        <h3>Here is my projects</h3>
-        <ol>
-            <!-- project 1 -->
-            <li>
-                <a href="./assets/pages/HTML/textFormattinfTags/about-cpu-info.html">
-                    <h3>About CPU information</h3>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="John Doe - Professional Web Developer & Designer Portfolio">
+    <meta name="keywords" content="web developer, portfolio, frontend, developer, designer, UI/UX">
+    <meta name="author" content="John Doe">
+    <link  rel="stylesheet" href="style.css">
+    
+    <!-- Page Title -->
+    <title>John Doe | Web Developer & Designer</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Background Canvas for Particles -->
+    <canvas id="particles-canvas" class="particles-background"></canvas>
+    
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h2>John<span>Doe</span></h2>
+            </div>
+            <nav class="navbar">
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="container">
+            <div class="home-content fade-in">
+                <h1>Hello, I'm <span class="highlight">John Doe</span></h1>
+                <h2 class="profession">Web Developer & Designer</h2>
+                <p class="intro-text">I create beautiful, functional websites with clean code and user-centered design.</p>
+                <div class="home-buttons">
+                    <a href="#projects" class="primary-btn">View My Work</a>
+                    <a href="#contact" class="secondary-btn">Contact Me</a>
+                </div>
+                <div class="social-icons">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon">
+                        <i class="github"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon">
+                        <i class="linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon">
+                        <i class="twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <a href="#about">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                    <div class="arrow">
+                        <span></span>
+                    </div>
                 </a>
-            </li>
-            <!-- project 2 -->
-             <li>
-                <a href="./assets/pages/HTML/textFormattinfTags/text-formating.html">
-                    <h3>Text formation tags</h3>
-                </a>
-             </li>
-             <!-- project 3 -->
-        </ol>
-    </body>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title fade-in">About Me</h2>
+            <div class="about-content">
+                <div class="about-image fade-in">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80" alt="John Doe">
+                    </div>
+                </div>
+                <div class="about-text fade-in">
+                    <h3>Who am I?</h3>
+                    <p>I am a passionate web developer with 5 years of experience creating elegant solutions in the digital world. My expertise lies in building responsive websites that offer a seamless user experience.</p>
+                    
+                    <h3>My Skills</h3>
+                    <div class="skills-container">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML & CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-value="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-value="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">UI/UX Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-value="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">React</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-value="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="download-cv">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title fade-in">My Projects</h2>
+            <div class="portfolio-filter fade-in">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="app">App Development</button>
+                <button class="filter-btn" data-filter="ui">UI/UX</button>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-item fade-in" data-category="web">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=500&q=80" alt="E-commerce Website">
+                    </div>
+                    <div class="project-info">
+                        <h3>Universal Calendar</h3>
+                        <p>A fully calendar</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="./pages/js/class-two.html" class="view-project">View Project</a>
+                            <a href="#" class="view-code">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-item fade-in" data-category="app">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=500&q=80" alt="Task Management App">
+                    </div>
+                    <div class="project-info">
+                        <h3>Task Management App</h3>
+                        <p>A productivity app to help users manage their daily tasks and projects.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="view-project">View Project</a>
+                            <a href="#" class="view-code">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-item fade-in" data-category="ui">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=500&q=80" alt="Banking Dashboard UI">
+                    </div>
+                    <div class="project-info">
+                        <h3>Banking Dashboard UI</h3>
+                        <p>A clean, intuitive dashboard design for a financial services application.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="view-project">View Project</a>
+                            <a href="#" class="view-code">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-item fade-in" data-category="web">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=500&q=80" alt="Portfolio Website">
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>A personal portfolio site showcasing creative work and projects.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="view-project">View Project</a>
+                            <a href="#" class="view-code">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title fade-in">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info fade-in">
+                    <div class="contact-item">
+                        <div class="contact-icon email-icon"></div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p>hello@johndoe.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon phone-icon"></div>
+                        <div class="contact-text">
+                            <h3>Phone</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon location-icon"></div>
+                        <div class="contact-text">
+                            <h3>Location</h3>
+                            <p>San Francisco, CA</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><div class="github-icon"></div></a>
+                        <a href="#" class="social-link"><div class="linkedin-icon"></div></a>
+                        <a href="#" class="social-link"><div class="twitter-icon"></div></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container fade-in">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 John Doe. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
 </html>
