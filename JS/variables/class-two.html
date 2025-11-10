@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="total-amount"></p>
+    <button onclick="getAmount()">Click </button>
+    <p id="display-1"></p>
+    <p id="display-2"></p>
+
+    <script>
+        // Scope of variable
+        // let a = 0
+        // let input = 0
+        // document.getElementById("display").innerHTML=a;
+        // function add(){
+        //     input = Number(prompt())
+        //     a = a + input
+        //     alert(a)
+        //     document.getElementById("display").innerHTML=a;
+        // }
+
+
+        let balance = 10000
+        let withdrawAmount = 0
+        document.getElementById("total-amount").innerHTML = balance;
+        function getAmount() {
+
+            withdrawAmount = Number(prompt("Enter amount to withdraw"))
+            balance = balance - withdrawAmount
+            document.getElementById("display-1").innerHTML = "Withdraw amount is :" + withdrawAmount;
+            document.getElementById("display-2").innerHTML = "Balance amount is :" + balance;
+            document.getElementById("total-amount").innerHTML = balance;
+        }
+
+    </script>
+</body>
+
+</html>

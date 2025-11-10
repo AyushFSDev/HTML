@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            padding: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="add()">Submit</button>
+    <script>
+        function add() {
+            //input 
+            let a = prompt("Enter a number one :");
+            let b = prompt("Enter a number two :");
+
+            //process
+
+            //type convert string to number
+            let d = Number(a);
+            let e = Number(b);
+
+            let c = d + e;
+            //output
+            alert(c);
+        }
+    </script>
+</body>
+
+</html>

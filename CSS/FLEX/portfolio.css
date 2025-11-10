@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: auto;
+}
+
+/* header css start---------------- */
+header {
+  width: 100%;
+  height: 100px;
+  position:fixed;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  font-size: 25px;
+}
+/* header css end------------------ */
+main {
+  width: 100%;
+  height: auto;
+}
+
+/* home section css start----------- */
+.home {
+  width: 100%;
+  height: 800px;
+  background-color: #33a1e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-content {
+  width: 50%;
+  height: 30%;
+  background-color: #3297d1;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home,
+h1 {
+  padding: 0;
+  margin: 0;
+}
+/* home section css end ------------ */
+
+/* about section css start---------- */
+.about {
+  width: 100%;
+  height: 800px;
+  background-color: #1c638d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about-title {
+  width: 100%;
+  height: 10%;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+}
+.about-content{
+  width: 80%;
+  height: 80%;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.content-left{
+  width: 40%;
+  height: 90%;
+  background-color: antiquewhite;
+}
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content-right{
+  width: 40%;
+  height: 90%;
+  background-color: rgb(141, 115, 84);
+}
+/* about section css end------------ */
+
+/* project section css start---------- */
+.project {
+  width: 100%;
+  height: 800px;
+  background-color: #2585bd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.project-title {
+  width: 100%;
+  height: 10%;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+}
+.project-cards {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+.card {
+  width: 20%;
+  height: 300px;
+  background-color: #0e557e;
+  border-radius: 20px;
+}
+/* project section css end------------ */
+
+/* contact section css start---------- */
+.contact {
+  width: 100%;
+  height: 800px;
+  background-color: #023f62;
+}
+.contact-title {
+  width: 100%;
+  height: 10%;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+}
+/* contact section css end------------ */

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable in js</title>
+</head>
+
+<body>
+    <script>
+        //let decleration
+        let mark = 50
+        // alert("Mark : " + mark)
+        mark = 60
+        //alert("Mark : " + mark)
+        mark += 100 // mark = mark + 100
+        //alert("Mark : " + mark)
+
+        // constant 
+        const age = 18
+        console.log("Age : " + age)
+
+        //var
+        var a = 10
+        //alert ("A" + a)
+
+        var a = 20
+        console.log(a)
+
+        let number = 0
+        function add() {
+            let userInput = 20
+            number = number + userInput
+            userInput = 60
+            number = number + userInput
+        }
+
+        let balance = 30000
+        function getAmount(){
+          let amount = Number(prompt("Enter amount to widthdraw : "))
+          alert ("Balance amount is " + Number(balance - amount))
+        }
+        getAmount()
+
+    </script>
+</body>
+
+</html>

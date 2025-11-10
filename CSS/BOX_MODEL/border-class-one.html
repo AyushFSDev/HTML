@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Lobster&family=Pacifico&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Box modeling</title>
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+      }
+      .box-one {
+        width: 50%;
+        height: 50%;
+        background-color: aqua;
+        margin-left: 200px;
+        margin-top: 200px;
+        padding-left: 100px;
+        padding-top: 100px;
+        border-radius: 50px;
+      }
+      .inner-box {
+        width: 20%;
+        height: 20%;
+        background-color: brown;
+        margin-left: 200px;
+        margin-top: 200px;
+        border-radius: 30px;
+      }
+      button {
+        width: 20%;
+        height: 10%;
+        font-size: 30px;
+        font-family: "Winky Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box-one">
+      <div class="inner-box"></div>
+    </div>
+
+    <button>Submit</button>
+  </body>
+</html>

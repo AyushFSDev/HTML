@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="text"></h1>
+    <div class="container" id="container"></div>
+    <input type="text" id="input"><br>
+    <button onclick="secondFunction()">Submit</button>
+    <script>
+        function myFunction() {
+            //input using prompt
+            let str = prompt("Enter a string");
+            // output 
+            document.getElementById("text").innerHTML = str;//html
+            alert(str);//alert
+            console.log(str);//console
+        }
+
+        function secondFunction() {
+            
+            let number1 = prompt("Enter a number");
+            let number2 = document.getElementById("input").value;
+        
+            let c = Number(number2) * Number(number1);
+          
+            document.getElementById("text").innerHTML = c
+
+            document.getElementById("container").style.backgroundColor = "lightcoral";
+            
+
+
+
+
+
+
+
+
+
+
+
+
+            c = 20
+            document.getElementById("text").innerHTML = c
+        }
+
+    </script>
+</body>
+
+</html>
