@@ -7,5 +7,25 @@
 </head>
 <body>
     <h1>Sum of two variable</h1>
+    <input type="number" id="input-one">
+    <br>
+    <input type="number" id="input-two">
+    <br>
+    <button onclick="calculateSum()">Calculate Sum</button>
+    <p id="output"></p>
+
+    <script>
+        function calculateSum(){
+            //input
+            let num1= document.getElementById("input-one").value;
+            let num2 = document.getElementById("input-two").value;
+
+            //process
+            let sum = Number(num1) + Number(num2);
+
+            //output
+            document.getElementById("output").innerHTML ="Sum is: " + sum;
+        }
+    </script>
 </body>
 </html>
